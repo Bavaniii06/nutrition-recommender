@@ -6,6 +6,8 @@ import plotly.express as px
 
 import os
 
+import os
+
 DATA_PATH = os.path.join("data", "processed", "foods_clean.csv")
 df = pd.read_csv(DATA_PATH)
 
