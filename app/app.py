@@ -4,8 +4,11 @@ import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 import plotly.express as px
 
-# Load cleaned food data
-df = pd.read_csv('C:/Users/Bavaniii/Downloads/health-nutrition-recommender/data/processed/foods_clean.csv')
+import os
+
+DATA_PATH = os.path.join("data", "processed", "foods_clean.csv")
+df = pd.read_csv(DATA_PATH)
+
 
 # Function to calculate daily calories
 def daily_calorie_need(sex, weight_kg, height_cm, age, activity_factor=1.2):
